@@ -6,3 +6,6 @@ class Book:
     price: int
     url: str = ''
     page_cnt: int = 0
+
+    def __repr__(self) -> str:
+        return f"{self.title}({self.price:,}원)"
